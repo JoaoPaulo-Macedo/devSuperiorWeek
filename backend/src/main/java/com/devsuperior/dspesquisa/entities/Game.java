@@ -34,7 +34,7 @@ public class Game implements Serializable {
 	@OneToMany(mappedBy = "game")
 	private List<Record> records = new ArrayList<>();
 	
-	private Game() {}
+	public Game() {}
 
 	public Game(Long id, String title, Platform platform, Genre genre) {
 		super();
